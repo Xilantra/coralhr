@@ -2639,31 +2639,10 @@ input[type="button"].btn-block {
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 
- .downdown
-			{
-color: white;
-font-size:4em;
-    -webkit-transition: all 0.5s ease-in-out;
--moz-transition: all 0.5s ease-in-out;
--ms-transition: all 0.5s ease-in-out;
--o-transition: all 0.5s ease-in-out;
-transition: all 0.5s ease-in-out;
-    border: none;
-     opacity: 0.5;
-    		}
+
 			
 
-			.downdown:hover
-			{
-text-decoration:none;
-    color: white;
- opacity: 1;
--moz-transform: scale(1.2)  ;
--webkit-transform: scale(1.2) ;
--o-transform: scale(1.2) ;
--ms-transform: scale(1.2) ;
-transform: scale(1.2)  ;
-			}
+
 .arrow-ni-je:hover { color: white; opacity: 1; border-bottom: none !important;}
 
 
