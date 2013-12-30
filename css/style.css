@@ -249,9 +249,10 @@
   margin: 0 auto;
   width: 150px;
   display: block;
-  height: auto;
+  height: 150px;
   cursor: pointer;
-  max-width: 100%;}
+  max-width: 100%;
+padding-bottom:20px;}
 
 .st348 {
   fill: #fff;
@@ -274,3 +275,9 @@ transition: all 0.5s ease-in-out;}
   display: block;
 }
 
+
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size:0.5em;
+    }
+}
