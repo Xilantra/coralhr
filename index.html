@@ -110,8 +110,10 @@
   
     <!-- Full Page Image Header Area -->
     <div id="top" class="header">
+      
+      <div class="prx">
       <div class="vert-text">
-                     <!-- Logo SVG-Round -->
+    <!-- Logo SVG-Round -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="228.313px" height="228.323px" viewBox="0 0 228.313 228.323" style="enable-background:new 0 0 228.313 228.323;"
 	 xml:space="preserve" class="logo-round">
@@ -136,10 +138,10 @@
                             help your organization - organized. <br>
                             Simple.
                         </h3>
-        <br>
+         
         <a href="#about" class="fa fa-chevron-down fa-4x downdown"></a>
       </div>
-    </div>
+    </div></div> 
     <!-- /Full Page Image Header Area -->
   
     <!-- Intro -->
@@ -407,6 +409,19 @@ Powerful Performance Management, Reporting, and Analytics functionality helps yo
     <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
     
+    
+    <script>
+        $(document).ready(function() {
+    $(window).scroll(function(e) {
+        var s = $(window).scrollTop(),
+            d = $(document).height(),
+            c = $(window).height(),
+            opacityVal = (s / 150);
+
+        $('.blx').css('opacity', opacityVal);
+    });
+});
+    </script>
     <!-- Smooth Scrolling -->
     <script>
       $(function() {
