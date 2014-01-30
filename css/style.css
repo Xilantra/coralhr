@@ -38,7 +38,7 @@
     /* Intro */
     
     .intro {
-      padding: 50px 0;color: #f07168;
+      padding: 100px 0;color: #f07168;
     }    
 .intro h2 {
       font-size: 3em;
@@ -378,5 +378,19 @@ color: white;
       -o-background-size: cover;
       background-size: cover;
 }
-
  
+
+.hilang {
+    opacity: 0;
+}
+.muncul {
+    opacity: 1;
+}
+
+.transit {
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+}
