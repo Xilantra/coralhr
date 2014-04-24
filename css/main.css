@@ -32,11 +32,14 @@ footer a {color: inherit}
 .bg-lightseagreen {background-color: lightseagreen; color: white}
 .bg-deepskyblue {background-color: deepskyblue; color: white}
 .bg-kuningHensem {background-color: #ffb700; padding: 40px; color: #fff}
+@media screen and (max-width: 769px) {[class*="bg-"] {padding-left: 5px !important;padding-right: 5px !important;}}
 .bg-coral .btn-margin {margin: 30px 0; color: coral}
 .bg-lightseagreen .btn-margin {margin: 30px 0; color: lightseagreen}
 .bg-lightseagreen .btn-marginBottom {margin: 270px 0 0 0; color: lightseagreen}
 @media screen and (max-width: 769px) {.bg-lightseagreen .btn-marginBottom {margin: 30px 0; color: lightseagreen}}
 .bg-kuningHensem .btn-margin {margin: 30px 0; color: #ffb700}
+.bg-dark .btn-margin {margin: 30px 0; color: #222}
+.bg-clean .btn-margin {margin: 30px 0; color: #444}
 .btn-margin:hover, .btn-marginBottom:hover {color: #fff; background: teal}
 .vertical-center {display: table-cell; vertical-align: middle}
 .besar {padding: 150px 60px}
@@ -54,12 +57,8 @@ footer a {color: inherit}
 .subscribe input::-moz-placeholder {color: #fff} /* Firefox 19+ */
 .subscribe input:-ms-input-placeholder {color: #fff}
 @media screen and (max-width: 769px) {.subscribe input {font-weight: bold;font-size: 1.5em;text-align: center; padding: 15px 0; border-bottom: 4px solid teal}.subscribe button {color: #fff; font-size: 1.5em; text-align: center; padding: 15px}}
-#share-buttons img {
-padding: 5px;
-border: 0;
-box-shadow: 0;
-display: inline;
-}
+
+.share-buttons img {padding: 5px;border: 0;box-shadow: 0;display: inline}
 .bulat-bulat {
     width: 150px;
     height: 150px;
@@ -78,4 +77,30 @@ display: inline;
     font-size: 1.7em;
     cursor: pointer;
     margin-top: 30px
+}
+
+.bg-dark {background-color: #222; color: #fff; }
+@media screen and (max-width: 769px) {.bg-dark p{font-size: 1.4em }}
+.bg-dark a{color: deepskyblue}
+.bg-dark a:hover{color: #ffb700}
+
+.besar-sikit {padding-top: 60px}
+
+.bg-clean {background-color: #e5e5e5; padding-top: 0; color: #555}
+
+.btn-khas {background-color: hotpink; color: white !important}
+
+.bg-transparent {background: transparent; color: rgba(255, 255, 255, 0.95); z-index: 100; padding-top: 5em; margin-left: auto; margin-right: auto}
+.bg-transparent .btn-margin {color: rgba(32, 178, 170, 0.8); background-color: rgba(255, 255, 255, 0.81)}
+@media screen and (max-width: 767px) {.bg-transparent {max-width: 300px; font-size: .71em}.bg-transparent .btn-margin {padding: 10px 20px; font-size: 2em}}
+
+@media screen and (max-width: 767px) {.btn-mobile-kecik {font-size: 1.2em}}
+
+.fixed {
+    background: url(../img/747__1397630488_219.92.14.157.jpg) center center no-repeat fixed;
+    height: 300px;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
 }
