@@ -1,10 +1,11 @@
 /** Afiq Xilantra Azmi
     CoralHR **/
 /** Bila finalize, clean up unused selector, minimize css & embed kat html for faster loading experience **/
-html, body {width:100%; height:100%}
+html, body {width:100%; height:100%; -webkit-font-smoothing: antialiased;}
+//@media screen and (max-width: 767px) {html, body {overflow-x: hidden; overflow-y: auto}}
 .full {
     position: relative;
-    padding-top: 200px;
+    padding-top: 150px;
     padding-bottom: 50px;
     display: table;
     width: 100%;
@@ -21,12 +22,13 @@ html, body {width:100%; height:100%}
          -o-background-size: cover;
             background-size: cover;
 }
-.full h1 {font-size: 4.3em; font-weight: 300}
+.full h1 {font-size: 5.3em; font-weight: 300}
+@media screen and (max-width: 767px) {.full {padding-top: 20px} .full h1 {font-size: 4.7em}}
 section, form, footer {display: table; width:100%; height:auto; padding: 20px;}
 section h2 {font-size: 3.3em}
 section p {font-size: 1.7em}
-footer.bg-coral { color: hsla(0, 0%, 100%, 0.8)}
-footer.bg-coral small {background-color: coral; color: hsla(0, 0%, 100%, 0.21)}
+footer p{ color: hsla(0, 0%, 100%, 0.64)}
+footer small {color: hsla(0, 0%, 100%, 0.25)}
 footer a {color: inherit}
 .bg-coral {background-color: coral; color: white}
 .bg-lightseagreen {background-color: lightseagreen; color: white}
@@ -103,4 +105,44 @@ footer a {color: inherit}
        -moz-background-size: cover;
          -o-background-size: cover;
             background-size: cover;
+}
+
+.playVideo {
+    position: relative;
+    display: inline-block;
+    top: -350px;
+    font-size: 4em;
+    border: 4px solid white;
+    padding: 10px;
+    background: #fff;
+    color: coral;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-box-shadow: 0 3px 0 3px rgba(0,0,0,.1);
+            box-shadow: 0 3px 0 3px rgba(0,0,0,.1);
+    -webkit-transition: all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            transition: all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+ }
+
+@media screen and (max-width: 767px) {
+    .playVideo {top: -160px;font-size: 2em}
+    .playVideo:hover {
+    -webkit-transform: none !important;
+       -moz-transform: none !important;
+        -ms-transform: none !important;
+         -o-transform: none !important;
+            transform: none !important;
+    }
+}
+
+.playVideo:hover {
+    -webkit-font-smoothing: antialiased;
+    -webkit-transform: scale(1.7) translateY(-50px);
+       -moz-transform: scale(1.7) translateY(-50px);
+        -ms-transform: scale(1.7) translateY(-50px);
+         -o-transform: scale(1.7) translateY(-50px);
+            transform: scale(1.7) translateY(-50px);
 }
