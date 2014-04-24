@@ -343,11 +343,11 @@ img {
   border-radius: 50%;
 }
 hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 50px;
   border: 0;
-  border-top: 1px solid #eeeeee;
+  border-top: 2px solid rgba(0, 0, 0, 0.12);
 }
+@media screen and (max-width: 767px) {hr {margin: 20px}}
 .sr-only {
   position: absolute;
   width: 1px;

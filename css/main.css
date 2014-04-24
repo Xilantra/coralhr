@@ -3,10 +3,10 @@
 /** Bila finalize, clean up unused selector, minimize css & embed kat html for faster loading experience **/
 html, body {width:100%; height:100%; -webkit-font-smoothing: antialiased;}
 //@media screen and (max-width: 767px) {html, body {overflow-x: hidden; overflow-y: auto}}
+
 .full {
     position: relative;
     padding-top: 150px;
-    padding-bottom: 50px;
     display: table;
     width: 100%;
     height: 100%;
@@ -127,9 +127,10 @@ footer a {color: inherit}
     
  }
 
+/** Disable hover fx on mobile **/
 @media screen and (max-width: 767px) {
     .playVideo {top: -160px;font-size: 2em}
-    .playVideo:hover {
+    .full:hover .playVideo {
     -webkit-transform: none !important;
        -moz-transform: none !important;
         -ms-transform: none !important;
@@ -138,7 +139,8 @@ footer a {color: inherit}
     }
 }
 
-.playVideo:hover {
+.full:hover .playVideo {
+    transition-delay: 1s;
     -webkit-font-smoothing: antialiased;
     -webkit-transform: scale(1.7) translateY(-50px);
        -moz-transform: scale(1.7) translateY(-50px);
@@ -146,3 +148,41 @@ footer a {color: inherit}
          -o-transform: scale(1.7) translateY(-50px);
             transform: scale(1.7) translateY(-50px);
 }
+
+.btn-full {width: 100%}
+
+.btn-theChosen:after {
+    font-family: 'FontAwesome';
+    content: '\f0d7';
+    color: #fff;
+    position: absolute;
+    font-size: 2em;
+    display: block;
+    margin-left: 36.5%;
+    margin-top: -15px
+}
+.btn:hover .btn-theChosen:after{color: teal}
+
+.isiTab-Penerangan {padding: 5px 67px; text-align: justify}
+@media screen and (max-width: 767px) {.isiTab-Penerangan {padding: 10px; text-align: left}}
+
+.icon-animate {
+    -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.penerangan:hover .icon-animate.roket {
+    visibility: hidden;
+    -webkit-transform: scale(2) translateX(150px) translateY(-150px);
+       -moz-transform: scale(2) translateX(150px) translateY(-150px);
+        -ms-transform: scale(2) translateX(150px) translateY(-150px);
+         -o-transform: scale(2) translateX(150px) translateY(-150px);
+            transform: scale(2) translateX(150px) translateY(-150px);
+}
+
+.isiTab-peneranganUtama {
+    //border-radius: 4px;
+    //background: grey;
+    border-right: 1px solid rgba(0, 0, 0, 0.11)
+}
+
+
