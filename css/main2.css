@@ -1,0 +1,106 @@
+/** Afiq Xilantra Azmi
+    CoralHR **/
+/** Bila finalize, clean up unused selector, minimize css & embed kat html for faster loading experience **/
+html, body {width:100%; height:100%}
+.full {
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: coral;
+    color: #fff;
+    overflow: hidden;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+}
+.full h1 {font-size: 4.3em; font-weight: 300}
+section, form, footer {display: table; width:100%; height:auto; padding: 20px;}
+section h2 {font-size: 3.3em}
+section p {font-size: 1.7em}
+footer.bg-coral { color: hsla(0, 0%, 100%, 0.8)}
+footer.bg-coral small {background-color: coral; color: hsla(0, 0%, 100%, 0.21)}
+footer a {color: inherit}
+.bg-coral {background-color: coral; color: white}
+.bg-lightseagreen {background-color: lightseagreen; color: white}
+.bg-deepskyblue {background-color: deepskyblue; color: white}
+.bg-kuningHensem {background-color: #ffb700; padding: 40px; color: #fff}
+@media screen and (max-width: 769px) {[class*="bg-"] {padding-left: 5px !important;padding-right: 5px !important;}}
+.bg-coral .btn-margin {margin: 30px 0; color: coral}
+.bg-lightseagreen .btn-margin {margin: 30px 0; color: lightseagreen}
+.bg-lightseagreen .btn-marginBottom {margin: 270px 0 0 0; color: lightseagreen}
+@media screen and (max-width: 769px) {.bg-lightseagreen .btn-marginBottom {margin: 30px 0; color: lightseagreen}}
+.bg-kuningHensem .btn-margin {margin: 30px 0; color: #ffb700}
+.bg-dark .btn-margin {margin: 30px 0; color: #222}
+.bg-clean .btn-margin {margin: 30px 0; color: #444}
+.btn-margin:hover, .btn-marginBottom:hover {color: #fff; background: teal}
+.vertical-center {display: table-cell; vertical-align: middle}
+.besar {padding: 150px 60px}
+@media screen and (max-width: 769px) {.besar {padding: 20px}}
+.blokKecik {max-width: 750px}
+.socialize {max-width: 580px}
+.margin-atas {margin-top: 150px}
+.socialize .margin-atas {margin-top: 45px}
+.icon-desc {padding: 20px 60px}
+@media screen and (max-width: 769px) {.mobile-center {text-align: center !important;display: block;margin-left: auto !important;margin-right: auto !important; float: none !important} .mobile-justify {text-align: justify}}
+.icon-space {margin-right: 20px}
+.subscribe input {width: 100%; background-color: lightseagreen; outline: none; border: none; color: #fff; font-size: 4em; margin-top: 20px;}
+.subscribe input::-webkit-input-placeholder {color: #fff}
+.subscribe input:-moz-placeholder {color: #fff} /* Firefox 18- */
+.subscribe input::-moz-placeholder {color: #fff} /* Firefox 19+ */
+.subscribe input:-ms-input-placeholder {color: #fff}
+@media screen and (max-width: 769px) {.subscribe input {font-weight: bold;font-size: 1.5em;text-align: center; padding: 15px 0; border-bottom: 4px solid teal}.subscribe button {color: #fff; font-size: 1.5em; text-align: center; padding: 15px}}
+
+.share-buttons img {padding: 5px;border: 0;box-shadow: 0;display: inline}
+.bulat-bulat {
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    color: coral;
+    vertical-align: middle;
+    line-height: 190px;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+}
+.cards {
+    background-color: #fff;
+    color: #666;
+    display: block;
+    padding: 20px;
+    font-size: 1.7em;
+    cursor: pointer;
+    margin-top: 30px
+}
+
+.bg-dark {background-color: #222; color: #fff; }
+@media screen and (max-width: 769px) {.bg-dark p{font-size: 1.4em }}
+.bg-dark a{color: deepskyblue}
+.bg-dark a:hover{color: #ffb700}
+
+.besar-sikit {padding-top: 60px}
+
+.bg-clean {background-color: #e5e5e5; padding-top: 0; color: #555}
+
+.btn-khas {background-color: hotpink; color: white !important}
+
+.bg-transparent {background: transparent; color: rgba(255, 255, 255, 0.95); z-index: 100; padding-top: 5em; margin-left: auto; margin-right: auto}
+.bg-transparent .btn-margin {color: rgba(32, 178, 170, 0.8); background-color: rgba(255, 255, 255, 0.81)}
+@media screen and (max-width: 767px) {.bg-transparent {max-width: 300px; font-size: .71em}.bg-transparent .btn-margin {padding: 10px 20px; font-size: 2em}}
+
+@media screen and (max-width: 767px) {.btn-mobile-kecik {font-size: 1.2em}}
+
+.fixed {
+    background: url(../img/747__1397630488_219.92.14.157.jpg) center center no-repeat fixed;
+    height: 300px;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+}
