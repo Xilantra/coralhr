@@ -92,7 +92,7 @@ footer a {color: inherit}
 
 .btn-khas {background-color: hotpink; color: white !important}
 
-.bg-transparent {background: transparent; color: rgba(255, 255, 255, 0.95); z-index: 100; padding-top: 5em; margin-left: auto; margin-right: auto}
+.bg-transparent {background: transparent; color: rgba(255, 255, 255, 0.95); z-index: 100; padding-top: 5em; margin-left: auto; margin-right: auto; -webkit-transform: translateZ(1px)}
 .bg-transparent .btn-margin {color: rgba(32, 178, 170, 0.8); background-color: rgba(255, 255, 255, 0.81)}
 @media screen and (max-width: 767px) {.bg-transparent {max-width: 300px; font-size: .71em}.bg-transparent .btn-margin {padding: 10px 20px; font-size: 2em}}
 
@@ -159,9 +159,15 @@ footer a {color: inherit}
     font-size: 2em;
     display: block;
     margin-left: 36.5%;
-    margin-top: -15px
+    margin-top: -15px;
+    -webkit-transition: all 0.3s ease-in-out;
+       -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+         -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;    
 }
-.btn:hover .btn-theChosen:after{color: teal}
+@media screen and (max-width: 767px) {.btn-theChosen:after {margin-left: 32%}}
+.btn-theChosen:hover:after{color: teal} 
 
 .isiTab-Penerangan {padding: 5px 67px; text-align: justify}
 @media screen and (max-width: 767px) {.isiTab-Penerangan {padding: 10px; text-align: left}}
