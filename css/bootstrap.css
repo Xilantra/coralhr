@@ -61,6 +61,15 @@ button {
          -o-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
 }
+.btn:focus, .btn:active {
+    background-color: teal;
+    outline: none !important;
+     -webkit-transform: scale(.9);
+        -moz-transform: scale(.9);
+         -ms-transform: scale(.9);
+          -o-transform: scale(.9);
+             transform: scale(.9);
+}
 abbr[title] {
   border-bottom: 1px dotted;
 }

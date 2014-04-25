@@ -3,20 +3,19 @@
 /** Bila finalize, clean up unused selector, minimize css & embed kat html for faster loading experience **/
 html, body {width:100%; height:100%; -webkit-font-smoothing: antialiased;}
 //@media screen and (max-width: 767px) {html, body {overflow-x: hidden; overflow-y: auto}}
-
+.browsehappy {text-align: center;  color: #fff; padding: 20px; font-size: 2em}
+.browsehappy a {text-decoration: underline}
 .full {
     position: relative;
     padding-top: 150px;
     display: table;
     width: 100%;
     height: 100%;
+    background: url(../img/747__1397630488_219.92.14.157.jpg) no-repeat center center fixed;
     background-color: coral;
     color: #fff;
     overflow: hidden;
     margin: 0;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-attachment: fixed;
     -webkit-background-size: cover;
        -moz-background-size: cover;
          -o-background-size: cover;
@@ -154,20 +153,15 @@ footer a {color: inherit}
 .btn-theChosen:after {
     font-family: 'FontAwesome';
     content: '\f0d7';
-    color: #fff;
+    color: teal;
     position: absolute;
     font-size: 2em;
     display: block;
     margin-left: 36.5%;
     margin-top: -15px;
-    -webkit-transition: all 0.3s ease-in-out;
-       -moz-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-         -o-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out;    
 }
-@media screen and (max-width: 767px) {.btn-theChosen:after {margin-left: 32%}}
-.btn-theChosen:hover:after{color: teal} 
+@media screen and (max-width: 767px) {.btn-theChosen:after {margin-left: 28%}}
+
 
 .isiTab-Penerangan {padding: 5px 67px; text-align: justify}
 @media screen and (max-width: 767px) {.isiTab-Penerangan {padding: 10px; text-align: left}}
@@ -176,6 +170,7 @@ footer a {color: inherit}
     -webkit-transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
             transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+/**
 .penerangan:hover .icon-animate.roket {
     visibility: hidden;
     -webkit-transform: scale(2) translateX(150px) translateY(-150px);
@@ -184,11 +179,13 @@ footer a {color: inherit}
          -o-transform: scale(2) translateX(150px) translateY(-150px);
             transform: scale(2) translateX(150px) translateY(-150px);
 }
-
+**/
 .isiTab-peneranganUtama {
     //border-radius: 4px;
     //background: grey;
     border-right: 1px solid rgba(0, 0, 0, 0.11)
 }
 
-
+.tab-content{display: none}
+.tab-link.current{background: teal; color: #fff}
+.tab-content.current{display: inherit}
