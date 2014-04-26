@@ -91,9 +91,20 @@ footer a {color: inherit}
 
 .btn-khas {background-color: hotpink; color: white !important}
 
-.bg-transparent {background: transparent; color: rgba(255, 255, 255, 0.95); z-index: 100; padding-top: 5em; margin-left: auto; margin-right: auto; -webkit-transform: translateZ(1px)}
+.bg-transparent {
+    color: rgba(255, 255, 255, 0.95); 
+    padding-top: 5em; 
+    margin-left: auto; 
+    margin-right: auto; 
+    background: url(../img/grobok.jpg) center center no-repeat fixed;
+    background-color: coral;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;   
+}
 .bg-transparent .btn-margin {color: rgba(32, 178, 170, 0.8); background-color: rgba(255, 255, 255, 0.81)}
-@media screen and (max-width: 767px) {.bg-transparent {max-width: 300px; font-size: .71em}.bg-transparent .btn-margin {padding: 10px 20px; font-size: 2em}}
+@media screen and (max-width: 767px) {.bg-transparent {padding-bottom: 50px }.bg-transparent .btn-margin {padding: 10px; font-size: 1.6em}}
 
 @media screen and (max-width: 767px) {.btn-mobile-kecik {font-size: 1.2em}}
 
@@ -157,7 +168,7 @@ footer a {color: inherit}
     position: absolute;
     font-size: 2em;
     display: block;
-    margin-left: 36.5%;
+    margin-left: 34.5%;
     margin-top: -15px;
 }
 @media screen and (max-width: 767px) {.btn-theChosen:after {margin-left: 28%}}
@@ -189,3 +200,22 @@ footer a {color: inherit}
 .tab-content{display: none}
 .tab-link.current{background: teal; color: #fff}
 .tab-content.current{display: inherit}
+
+/** Efek **/
+.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}@-webkit-keyframes fadeIn{0%{opacity:0}100%{opacity:1}}@keyframes fadeIn{0%{opacity:0}100%{opacity:1}}.fadeIn{-webkit-animation-name:fadeIn;animation-name:fadeIn}@-webkit-keyframes bounceInRight{0%{opacity:0;-webkit-transform:translateX(2000px);transform:translateX(2000px)}60%{opacity:1;-webkit-transform:translateX(-30px);transform:translateX(-30px)}80%{-webkit-transform:translateX(10px);transform:translateX(10px)}100%{-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes bounceInRight{0%{opacity:0;-webkit-transform:translateX(2000px);-ms-transform:translateX(2000px);transform:translateX(2000px)}60%{opacity:1;-webkit-transform:translateX(-30px);-ms-transform:translateX(-30px);transform:translateX(-30px)}80%{-webkit-transform:translateX(10px);-ms-transform:translateX(10px);transform:translateX(10px)}100%{-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}}.bounceInRight{-webkit-animation-name:bounceInRight;animation-name:bounceInRight}@-webkit-keyframes bounceOutRight{0%{-webkit-transform:translateX(0);transform:translateX(0)}20%{opacity:1;-webkit-transform:translateX(-20px);transform:translateX(-20px)}100%{opacity:0;-webkit-transform:translateX(2000px);transform:translateX(2000px)}}@keyframes bounceOutRight{0%{-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}20%{opacity:1;-webkit-transform:translateX(-20px);-ms-transform:translateX(-20px);transform:translateX(-20px)}100%{opacity:0;-webkit-transform:translateX(2000px);-ms-transform:translateX(2000px);transform:translateX(2000px)}}.bounceOutRight{-webkit-animation-name:bounceOutRight;animation-name:bounceOutRight}@-webkit-keyframes bounceInLeft{0%{-webkit-transform:translateX(-2000px);transform:translateX(-2000px)}60%{-webkit-transform:translateX(30px);transform:translateX(30px)}80%{-webkit-transform:translateX(-10px);transform:translateX(-10px)}100%{-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes bounceInLeft{0%{-webkit-transform:translateX(-2000px);-ms-transform:translateX(-2000px);transform:translateX(-2000px)}60%{-webkit-transform:translateX(30px);-ms-transform:translateX(30px);transform:translateX(30px)}80%{-webkit-transform:translateX(-10px);-ms-transform:translateX(-10px);transform:translateX(-10px)}100%{-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}}.bounceInLeft{-webkit-animation-name:bounceInLeft;animation-name:bounceInLeft}@-webkit-keyframes bounceOutLeft{0%{-webkit-transform:translateX(0);transform:translateX(0)}20%{-webkit-transform:translateX(20px);transform:translateX(20px)}100%{-webkit-transform:translateX(-2000px);transform:translateX(-2000px)}}@keyframes bounceOutLeft{0%{-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}20%{-webkit-transform:translateX(20px);-ms-transform:translateX(20px);transform:translateX(20px)}100%{-webkit-transform:translateX(-2000px);-ms-transform:translateX(-2000px);transform:translateX(-2000px)}}.bounceOutLeft{-webkit-animation-name:bounceOutLeft;animation-name:bounceOutLeft}.efekMembesar {-webkit-transition: all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);-moz-transition: all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);-ms-transition: all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);-o-transition: all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);transition: all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55)}.efekMembesar:hover{-webkit-transform: scale(2);-moz-transform: scale(2);-ms-transform: scale(2);-o-transform: scale(2);transform: scale(2)}
+@media screen and (max-width: 767px) {
+.mobileFont-small {
+    font-size: 1em; 
+     padding-left:5px; 
+    padding-right:5px; 
+    font-weight: 600;
+}
+.resetMargin {
+    margin-right:-15px;    
+    margin-left:-15px;  
+    padding-right: 20px;
+    width: 130px;
+}
+.isiTab-peneranganUtama {background-color: #444; border-radius: 4px}
+}
+ 
