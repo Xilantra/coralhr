@@ -4458,14 +4458,22 @@ a.list-group-item-danger.active:focus {
   border-radius: 3px;
 }
 .close {
+  position: relative;
+    top: -35px;
+    right: -35px;
   float: right;
-  font-size: 21px;
+  font-size: 1.6em;
   font-weight: bold;
   line-height: 1;
   color: #000000;
   text-shadow: 0 1px 0 #ffffff;
-  opacity: 0.2;
-  filter: alpha(opacity=20);
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  -webkit-transition: all .4s ease-in-out;
+     -moz-transition: all .4s ease-in-out;
+      -ms-transition: all .4s ease-in-out;
+       -o-transition: all .4s ease-in-out;
+          transition: all .4s ease-in-out;
 }
 .close:hover,
 .close:focus {

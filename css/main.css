@@ -1,8 +1,11 @@
 /** Afiq Xilantra Azmi
     CoralHR **/
 /** Bila finalize, clean up unused selector, minimize css & embed kat html for faster loading experience **/
+
+/**** kaler ni cantik laaaa #00CED1 ****/
+
 html, body {width:100%; height:100%; -webkit-font-smoothing: antialiased;}
-//@media screen and (max-width: 767px) {html, body {overflow-x: hidden; overflow-y: auto}}
+@media screen and (max-width: 767px) {html, body {overflow-x: hidden; overflow-y: auto}}
 .browsehappy {text-align: center;  color: #fff; padding: 20px; font-size: 2em}
 .browsehappy a {text-decoration: underline}
 .full {
@@ -88,6 +91,7 @@ footer a {color: inherit}
 .besar-sikit {padding-top: 60px}
 
 .bg-clean {background-color: #e5e5e5; padding-top: 0; color: #555}
+.bg-clean.besar {padding-top: 50px; padding-bottom: 150px}
 
 .btn-khas {background-color: hotpink; color: white !important}
 
@@ -219,3 +223,39 @@ footer a {color: inherit}
 .isiTab-peneranganUtama {background-color: #444; border-radius: 4px}
 }
  
+.entahLaNak {
+    padding-top: 100px;
+    padding-bottom: 50px
+}
+
+@media screen and (max-width: 767px) {.entahLaNak {padding-top: 50px;}}
+
+section h4 {font-weight: 500; font-size: 2em; background-color: lightslategray; color: #fff; width: 300px; padding: 20px 0; margin: 20px auto; border-radius: 4px; box-shadow: inset 0 0 4px 2px rgba(0, 0, 0, 0.2); border: 1px solid rgba(255, 255, 255, 0.9)}
+
+@media screen and (max-width: 767px) {section h4 {width: 100%}}
+
+
+
+.vr {
+    height: 300px;
+    border-left: 2px solid rgba(0, 0, 0, 0.12);
+    position: absolute;
+    margin-top: 50px;
+    left: 50%;
+}
+@media screen and (max-width: 767px) {.vr {display: none}}
+
+.kecik-sikit {max-width: 80%; margin: 0 auto}
+
+.tellThemMore {
+    padding:40px;
+    color: white;
+    border-radius: 4px;  
+    background-color: lightslategray;
+    -webkit-box-shadow: 0 0 20px 1px rgba(0,0,0,.3);
+            box-shadow: 0 0 20px 1px rgba(0,0,0,.3);
+                border: 1px solid rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 767px) {.kecik-sikit {max-width: 100%;}.tellThemMore {padding: 20px; text-align: left; font-size: 1.4em}}
+
+
