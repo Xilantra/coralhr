@@ -333,6 +333,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+/**Fix Firefox problem untuk table > img r **/
+@-moz-document url-prefix() { 
+  .img-responsive{width:100%}
+}
+
 .img-rounded {
   border-radius: 4px;
 }

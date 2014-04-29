@@ -1,9 +1,8 @@
 /** Afiq Xilantra Azmi
     CoralHR **/
-/** Bila finalize, clean up unused selector, minimize css & embed kat html for faster loading experience **/
+/** Bila finalize, clean up unused css, & embed kat html for faster loading experience **/
 
 /**** kaler ni cantik laaaa #00CED1 ****/
-
 html, body {width:100%; height:100%; -webkit-font-smoothing: antialiased;}
 @media screen and (max-width: 767px) {html, body {overflow-x: hidden; overflow-y: auto}}
 .browsehappy {text-align: center;  color: #fff; padding: 20px; font-size: 2em}
@@ -26,11 +25,13 @@ html, body {width:100%; height:100%; -webkit-font-smoothing: antialiased;}
 }
 .full h1 {font-size: 5.3em; font-weight: 300}
 @media screen and (max-width: 767px) {.full {padding-top: 20px} .full h1 {font-size: 4.7em}}
-section, form, footer {display: table; width:100%; height:auto; padding: 20px;}
+
+
+section, form, footer {display: table; width:100%; height:auto; padding: 20px; background-color: #e5e5e5 !important; color: #444 !important}
 section h2 {font-size: 3.3em}
 section p {font-size: 1.7em}
-footer p{ color: hsla(0, 0%, 100%, 0.64)}
-footer small {color: hsla(0, 0%, 100%, 0.25)}
+footer p{ color: hsla(0, 0%, 0%, 0.64)}
+footer small {color: hsla(0, 0%, 100%, 0.7)}
 footer a {color: inherit}
 .bg-coral {background-color: coral; color: white}
 .bg-lightseagreen {background-color: lightseagreen; color: white}
@@ -55,11 +56,17 @@ footer a {color: inherit}
 .icon-desc {padding: 20px 60px}
 @media screen and (max-width: 769px) {.mobile-center {text-align: center !important;display: block;margin-left: auto !important;margin-right: auto !important; float: none !important} .mobile-justify {text-align: justify}}
 .icon-space {margin-right: 20px}
-.subscribe input {width: 100%; background-color: lightseagreen; outline: none; border: none; color: #fff; font-size: 4em; margin-top: 20px;}
-.subscribe input::-webkit-input-placeholder {color: #fff}
-.subscribe input:-moz-placeholder {color: #fff} /* Firefox 18- */
-.subscribe input::-moz-placeholder {color: #fff} /* Firefox 19+ */
-.subscribe input:-ms-input-placeholder {color: #fff}
+.subscribe input {width: 100%; background-color: #e5e5e5; outline: none; border: none; color: #444; font-size: 4em; margin-top: 20px;
+-webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+     -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;}
+.subscribe:hover input {background-color: #fff}
+.subscribe input::-webkit-input-placeholder {color: #444}
+.subscribe input:-moz-placeholder {color: #444} /* Firefox 18- */
+.subscribe input::-moz-placeholder {color: #444} /* Firefox 19+ */
+.subscribe input:-ms-input-placeholder {color: #444}
 @media screen and (max-width: 769px) {.subscribe input {font-weight: bold;font-size: 1.5em;text-align: center; padding: 15px 0; border-bottom: 4px solid teal}.subscribe button {color: #fff; font-size: 1.5em; text-align: center; padding: 15px}}
 
 .share-buttons img {padding: 5px;border: 0;box-shadow: 0;display: inline}
@@ -220,7 +227,7 @@ footer a {color: inherit}
     padding-right: 20px;
     width: 130px;
 }
-.isiTab-peneranganUtama {background-color: #444; border-radius: 4px}
+.isiTab-peneranganUtama {background-color: #444; color: #fff; border-radius: 4px}
 }
  
 .entahLaNak {
@@ -259,3 +266,6 @@ section h4 {font-weight: 500; font-size: 2em; background-color: lightslategray; 
 @media screen and (max-width: 767px) {.kecik-sikit {max-width: 100%;}.tellThemMore {padding: 20px; text-align: left; font-size: 1.4em}}
 
 
+
+.logo {background: transparent; height: 400px}
+@media screen and (max-width: 767px) {.logo {height: 250px}}
