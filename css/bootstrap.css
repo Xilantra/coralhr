@@ -61,8 +61,9 @@ button {
          -o-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
 }
-.btn:focus, .btn:active {
-    background-color: teal;
+.btn:active {
+    background-color: lightseagreen;
+    color: #fff;
     outline: none !important;
      -webkit-transform: scale(.9);
         -moz-transform: scale(.9);
@@ -333,11 +334,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-/**Fix Firefox problem untuk table > img r **/
-@-moz-document url-prefix() { 
-  .img-responsive{width:100%}
-}
-
 .img-rounded {
   border-radius: 4px;
 }
